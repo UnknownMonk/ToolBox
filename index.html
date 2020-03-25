@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>IMG Tool Box</title>
+  </head>
+  <body>
+	<div id='container'>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Org ID's</h1>
+          <p>Search Trading Partner For Org Id</p>
+          <form id="search-orgs">
+            <input type="text" placeholder="Search orgs..." />
+		  </form>
+		 
+	    	</div>
+	    </header>
+	    
+		
+		
+		
+	    <div>
+			<p>ORG Name: Org Id</p>
+		</div>
+		<div id="ipswitcher">
+			<h2>Ip Switcher</h2>
+			<iframe src="http://api.thefreetms.com/ip"></iframe>
+
+		</div>
+		
+	</div>
+
+	
+
+	
+	
+	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Search for EDI documents</h1>
+          
+	    	</div>
+	    </header>
+	    <div id="org-list">
+	    	
+	    	<ul>
+				<h2 class="title">EDI log by org id & load id</h2>
+	    		<li>
+					<form id="EDI_log">
+					
+					<input   id="orgID"  type="text" placeholder="Org Id"> <input id="loadId"  type="text" placeholder="Load Id"> <button class="Search">Search</button>
+				</form>
+				</li>
+				<h2 class="title">EDI log by org id & shipment id</h2>
+	    		<li>
+	    			
+	    			<form id="EDI_log_sID">
+					
+						<input   id="_orgID"  type="text" placeholder="Org Id"> <input id="shipment_Id"  type="text" placeholder="Shipment Id"> <button class="Search">Search</button>
+					</form>
+				</li>
+				<h2 class="title">EDI Unhandled by org id</h2>
+	    		<li>
+	    			
+	    			<form id="EDI_Unhandled">
+					
+						<input   id="UnhandledOrgId"  type="text" placeholder="Org Id"> <button class="Search">Search</button>
+					</form>
+				</li>
+				<h2 class="title">Find doc by time of day</h2>
+	    		<li>
+	    			
+	    			<form id="Doc_By_Day">
+					
+						<input   id="docByDay"  type="text" placeholder="MM-DDTtt"> <button class="Search">Search</button>
+					</form>
+				</li>
+				<h2 class="title">Find doc by doc type</h2>
+	    		<li>
+	    			
+	    			<form id="Doc_By_Type">
+						<input   id="p-flag"  type="text" placeholder="p-flag">
+						<input   id="docType"  type="text" placeholder="Doc-Type-"> <button class="Search">Search</button>
+						<input   id="startDate"  type="text" placeholder="YY-MM-DD">  <button class="Search">Search</button>
+						<input   id="endDate"  type="text" placeholder="YY-MM-DD">  <button class="Search">Search</button>
+					</form>
+				</li>
+				
+	    	</ul>
+		</div>
+		
+		
+
+	</div>
+	
+	
+	
+</div>
+
+
+<script src="index.js"></script>
+
+  </body>
+</html>
